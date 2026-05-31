@@ -27,13 +27,11 @@ Here is how the 4 core platform pages should be structured for the UI layout:
 ```
                   [1. Landing Page]
                           │
-                 ┌────────┴────────┐
-                 ▼                 ▼
-         [2. Marketplace]   [3. Owner Dashboard]
-                 │                 │
-                 └────────┬────────┘
                           ▼
-             [4. Business Details Page]
+                 [2. Owner Dashboard]
+                          │
+                          ▼
+             [3. Business Details Page]
                 (Public Mobile View)
 
 ```
@@ -43,13 +41,7 @@ Here is how the 4 core platform pages should be structured for the UI layout:
 * **Core UI:** Clean SaaS hero section. Value proposition: *"One QR Code. One Link. Your Entire Digital Presence & AI Lead Assistant in 60 Seconds."*
 * **CTA:** "Claim your business handle" input field (e.g., `omniverse.qr/surat-textiles`).
 
-#### Page 2: The Marketplace (Discovery Engine)
-
-* **Core UI:** A grid layout with fluid search and categorization filters.
-* **Segments:** Toggles for `Manufacturers`, `Cafes & Food`, `Creators/Influencers`, `Freelance Professionals`.
-* **Cards:** Minimalist cards displaying the entity's name, core category, aggregated platform icons (Instagram, YouTube, etc.), and a quick button to launch their custom AI agent.
-
-#### Page 3: Business Details Page (The Public Mobile View)
+#### Page 2: Business Details Page (The Public Mobile View)
 
 * **Constraint:** This must look like a clean, 1-page HTML dashboard, completely optimized for a mobile browser viewport.
 * **Top Sticky Card:** Profile header, bio, and a horizontal row of verified external links (Instagram, Shopify, Google Maps, LinkedIn).
@@ -61,7 +53,7 @@ Here is how the 4 core platform pages should be structured for the UI layout:
 
 
 
-#### Page 4: Owner Configuration & Analytics Dashboard
+#### Page 3: Owner Configuration & Analytics Dashboard
 
 * **The RAG Manager:** A secure file drop zone where the owner views the raw extracted text from their identity files and can manually edit or append custom FAQ pairs to correct the AI's knowledge base.
 * **The Integration Panel:** Icon grid (WhatsApp, Telegram, Slack, Email) with simple API webhook input fields and toggle switches to configure where instant callback alerts are sent.
@@ -78,8 +70,7 @@ Act as a Principal Full-Stack Engineer. Build a high-fidelity, interactive React
 
 Implement the following views and simulate global state transitions between them:
 1. LANDING PAGE: A premium SaaS interface showcasing a "Claim your business handle" CTA.
-2. MARKETPLACE: A searchable directory grid switching between 'Businesses' and 'Individual Creators' (like UI/UX Designers or Influencers).
-3. BUSINESS DETAILS PAGE (Mobile-First Viewport): A ultra-clean 1-page layout displaying verified social links, a functional QA Chatbot with mock bilingual streaming responses, a 'Request Callback' form, and an Audio/Text Feedback engine.
+2. BUSINESS DETAILS PAGE (Mobile-First Viewport): A ultra-clean 1-page layout displaying verified social links, a functional QA Chatbot with mock bilingual streaming responses, a 'Request Callback' form, and an Audio/Text Feedback engine.
 4. OWNER DASHBOARD: An analytical control center featuring a downloadable dual-QR Generator (Main vs Feedback QR), a RAG Knowledge-Base Editor to review/modify custom business FAQs, and notification webhook toggle switches (WhatsApp, Slack, Telegram).
 
 Ensure all data flows logically: saving configuration edits or uploading file mocks in the Dashboard should immediately change the simulated outputs visible in the Public Mobile View.

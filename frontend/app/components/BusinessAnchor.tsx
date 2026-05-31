@@ -21,9 +21,7 @@ export default function BusinessAnchor() {
         <Image src="/anchor_texture.png" alt="Background Texture" fill className="object-cover opacity-40 mix-blend-overlay pointer-events-none" />
         
         <div className="relative z-10 w-full max-w-4xl mx-auto px-6 py-16 md:py-24 flex flex-col items-center text-center">
-          <Link href="/marketplace" className="absolute top-6 left-6 md:top-12 md:left-12 text-white/50 hover:text-white transition-colors flex items-center gap-2 text-[10px] font-bold tracking-widest uppercase">
-            <ArrowLeft size={16} /> Directory
-          </Link>
+
 
           <div className="w-24 h-24 md:w-32 md:h-32 bg-white/10 backdrop-blur border border-white/20 rounded-none p-1 mb-6 shadow-xl">
              <div className="w-full h-full bg-[#121212] flex items-center justify-center overflow-hidden">
