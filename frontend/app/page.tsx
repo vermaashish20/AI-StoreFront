@@ -17,8 +17,8 @@ export default function LandingPage() {
         </div>
         <div className="flex items-center gap-6">
           <Link href="/onboarding" className="text-sm font-medium hover:text-accent transition-colors">Log In</Link>
-          <Link href="/onboarding" className="px-5 py-2.5 bg-foreground text-background text-sm font-medium rounded-full hover:opacity-90 transition-opacity">
-            Build Storefront
+          <Link href="/dashboard" className="px-5 py-2.5 bg-foreground text-background text-sm font-medium rounded-full hover:opacity-90 transition-opacity">
+            Dashboard
           </Link>
         </div>
       </nav>
@@ -37,10 +37,14 @@ export default function LandingPage() {
              <p className="mt-6 text-lg text-gray-600 max-w-[50ch] leading-relaxed">
                Instantly convert offline menus and catalogs into an AI-powered storefront. One dynamic QR code unlocks your business to the world.
              </p>
-             <div className="mt-10 flex flex-col sm:flex-row items-center gap-4">
-               <Link href="/onboarding" className="px-8 py-4 bg-accent text-accent-fg font-medium rounded-full hover:opacity-90 transition-opacity flex items-center gap-2 text-base shadow-sm">
-                 Start Building <ArrowRight size={18} />
-               </Link>
+             <div className="mt-10 flex flex-col sm:flex-row items-center gap-4 w-full max-w-md">
+               <div className="flex w-full items-center bg-white border border-gray-300 rounded-full p-1.5 shadow-sm focus-within:ring-2 focus-within:ring-accent/20 focus-within:border-accent transition-all">
+                 <span className="pl-4 text-gray-500 text-sm font-medium select-none">omniverse.qr/</span>
+                 <input type="text" placeholder="your-brand" className="flex-1 bg-transparent border-none focus:outline-none text-foreground text-sm font-medium py-2 px-1" />
+                 <Link href="/dashboard" className="px-6 py-2.5 bg-accent text-accent-fg font-medium rounded-full hover:opacity-90 transition-opacity flex items-center gap-2 text-sm ml-2">
+                   Claim <ArrowRight size={16} />
+                 </Link>
+               </div>
              </div>
           </div>
 
