@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+:root {
+  --background: #faf9f6; /* Warm Ivory / Off-White */
+  --foreground: #121212; /* Deep Charcoal */
+  --accent: #0055ff; /* Electric Blue Pop */
+  --accent-fg: #ffffff;
+  --radius: 0.5rem; /* Crisper 8px radius for minimal builder feel */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --radius: var(--radius);
+}
+
+/* Force Light Mode / Remove Dark Mode to lock editorial look */
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
